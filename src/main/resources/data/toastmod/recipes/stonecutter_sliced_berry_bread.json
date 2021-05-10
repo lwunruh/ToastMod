@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "toastmod:berry_bread"
+  },
+  "result": "toastmod:sliced_berry_bread",
+  "group": "food",
+  "count": 4
+}

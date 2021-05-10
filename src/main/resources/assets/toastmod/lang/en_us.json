@@ -4,6 +4,11 @@
   "item.toastmod.light_toast": "Light Toast",
   "item.toastmod.medium_toast": "Medium Toast",
   "item.toastmod.burnt_toast": "Burnt Toast",
+  "item.toastmod.sliced_berry_bread": "Sliced Berry Bread",
+  "item.toastmod.light_berry_toast": "Light Berry Toast",
+  "item.toastmod.medium_berry_toast": "Medium Berry Toast",
+  "item.toastmod.burnt_berry_toast": "Burnt Berry Toast",
+  "item.toastmod.berry_bread": "Berry Bread",
   "item.toastmod.bread_knife": "Bread Knife",
   "block.toastmod.preserve_barrel": "Preserve Barrel"
 }

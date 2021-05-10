@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "ingredient": {
+    "item": "toastmod:medium_berry_toast"
+  },
+  "result": "toastmod:burnt_berry_toast",
+  "experience": 0.1,
+  "cookingtime": 150,
+  "group": "food"
+}
