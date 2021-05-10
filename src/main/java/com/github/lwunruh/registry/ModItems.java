@@ -4,6 +4,8 @@ import com.github.lwunruh.ToastMod;
 import com.github.lwunruh.items.BreadKnifeItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+import net.minecraft.data.server.AbstractTagProvider;
+import net.minecraft.data.server.ItemTagsProvider;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
@@ -68,7 +70,6 @@ public class ModItems {
 
     //Block Items
     //public static final BlockItem PRESERVE_BARREL = new BlockItem(ModBlocks.PRESERVE_BARREL, new Item.Settings().group(ToastMod.Toast));
-
 
     public static void registerItems(){
         Registry.register(Registry.ITEM, new Identifier(ToastMod.MOD_ID, "sliced_bread"), SLICED_BREAD);
