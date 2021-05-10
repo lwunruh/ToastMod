@@ -18,12 +18,13 @@ public class ModItems {
     public static final Item SLICED_BREAD = new Item(new FabricItemSettings().group(ToastMod.Toast)
             .food((new FoodComponent.Builder()).alwaysEdible().snack().hunger(2).saturationModifier(2.0F).build()));
     public static final Item LIGHT_TOAST = new Item(new FabricItemSettings().group(ToastMod.Toast)
-            .food((new FoodComponent.Builder()).alwaysEdible().snack().hunger(2).saturationModifier(2.0F).build()));
+            .food((new FoodComponent.Builder()).alwaysEdible().snack().hunger(3).saturationModifier(2.0F).build()));
     public static final Item MEDIUM_TOAST = new Item(new FabricItemSettings().group(ToastMod.Toast)
-            .food((new FoodComponent.Builder()).alwaysEdible().snack().hunger(2).saturationModifier(2.0F).build()));
+            .food((new FoodComponent.Builder()).alwaysEdible().snack().hunger(3).saturationModifier(2.0F).build()));
     public static final Item BURNT_TOAST = new Item(new FabricItemSettings().group(ToastMod.Toast)
             .food((new FoodComponent.Builder()).alwaysEdible().snack().hunger(2).saturationModifier(2.0F)
                     .statusEffect(new StatusEffectInstance(StatusEffects.HUNGER, 300, 0), 1.0F)
+                    .statusEffect(new StatusEffectInstance(StatusEffects.POISON, 60, 0), 0.5F)
                     .build()));
 
     //Spreads
