@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "toastmod:items/burnt_pumpkin_toast"
+  }
+}
