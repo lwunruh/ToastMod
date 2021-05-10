@@ -18,7 +18,6 @@ public class BreadKnifeItem extends SwordItem {
         super(toolMaterial, attackDamage, attackSpeed, settings);
     }
 
-
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         ItemStack offhand = user.getOffHandStack();
@@ -65,5 +64,10 @@ public class BreadKnifeItem extends SwordItem {
     @Override
     public ItemStack finishUsing(ItemStack stack, World world, LivingEntity user) {
         return this.isFood() ? user.eatFood(world, stack) : stack;
+    }
+
+    @Override
+    public boolean hasRecipeRemainder() {
+        return super.hasRecipeRemainder();
     }
 }

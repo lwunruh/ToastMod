@@ -1,0 +1,36 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "Toast Mod",
+            "color": "gold",
+            "bold": false
+        },
+        "description": {
+            "text": "Toast-related advancements"
+        },
+        "icon": {
+            "item": "toastmod:medium_toast"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false,
+        "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+    },
+    "criteria": {
+        "Start": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "toastmod:sliced_bread",
+                        "count": {
+                            "min": 1
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

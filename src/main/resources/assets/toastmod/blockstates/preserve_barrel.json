@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "toastmod:block/preserve_barrel" }
+  }
+}
