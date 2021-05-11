@@ -9,6 +9,11 @@
   "item.toastmod.medium_berry_toast": "Medium Berry Toast",
   "item.toastmod.burnt_berry_toast": "Burnt Berry Toast",
   "item.toastmod.berry_bread": "Berry Bread",
+  "item.toastmod.sliced_pumpkin_bread": "Sliced Pumpkin Bread",
+  "item.toastmod.light_pumpkin_toast": "Light Pumpkin Toast",
+  "item.toastmod.medium_pumpkin_toast": "Medium Pumpkin Toast",
+  "item.toastmod.burnt_pumpkin_toast": "Burnt Pumpkin Toast",
+  "item.toastmod.pumpkin_bread": "Pumpkin Bread",
   "item.toastmod.bread_knife": "Bread Knife",
   "block.toastmod.preserve_barrel": "Preserve Barrel"
 }
