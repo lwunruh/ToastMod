@@ -1,6 +1,8 @@
 package com.github.lwunruh.items;
 
 import com.github.lwunruh.registry.ModItems;
+import net.minecraft.enchantment.Enchantment;
+import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.enchantment.FireAspectEnchantment;
 import net.minecraft.entity.EquipmentSlot;
@@ -18,20 +20,6 @@ public class BreadKnifeItem extends SwordItem {
         super(toolMaterial, attackDamage, attackSpeed, settings);
     }
 
-    private ItemStack sliceBread(ItemStack mainhand, ItemStack offhand, PlayerEntity user, Hand hand, Item bread){
-        ItemStack new_bread = new ItemStack(ModItems.SLICED_BREAD, 4);
-
-        if(bread.equals(Items.BREAD)){
-            new_bread = new ItemStack(ModItems.SLICED_BREAD, 4);
-        }
-        if(bread.equals(ModItems.BERRY_BREAD)){
-            new_bread = new ItemStack(ModItems.SLICED_BERRY_BREAD, 4);
-        }
-        if(bread.equals(ModItems.PUMPKIN_BREAD)){
-            new_bread = new ItemStack(ModItems.SLICED_PUMPKIN_BREAD, 4);
-        }
-        return new_bread;
-    }
 
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
@@ -40,7 +28,7 @@ public class BreadKnifeItem extends SwordItem {
         Item item = offhand.getItem();
 
         if(item.equals(Items.BREAD) || item.equals(ModItems.BERRY_BREAD) || item.equals(ModItems.PUMPKIN_BREAD)){
-            ItemStack new_bread = sliceBread(offhand, mainhand, user, hand, item);
+            ItemStack new_bread = SliceBreadHelper.getSlicedBread(user, item);
 
             if(offhand.getCount() == 1) {
                 user.equipStack(EquipmentSlot.OFFHAND, new_bread);
